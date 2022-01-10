@@ -1,0 +1,13 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    //~ TESTING
+    testCompile 'org.testng:testng:6.8.+'
+    testCompile 'org.mockito:mockito-core:2.0.+'
+}

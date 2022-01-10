@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tests unitaires Jasmine BO Français 3.0</title>
+    <script type="text/javascript" src="jasmine-1.3.0/jasmine.js"></script>
+    <script type="text/javascript" src="jasmine-1.3.0/jasmine-html.js"></script>
+    <script type="text/javascript" src="../../dist/js/tondeuse.js"></script>
+    <script type="text/javascript" src="../angular-mocks.js"></script>
+    <script type="text/javascript" src="../unit/appTest.js"></script>
+    <script type="text/javascript" src="../unit/broadcast/broadcastTest.js"></script>
+    <script type="text/javascript" src="../unit/calculate/calculateTest.js"></script>
+    <script type="text/javascript" src="../unit/tv/tvTest.js"></script>
+    <script type="text/javascript" src="../unit/common/servicesTest.js"></script>
+    <link rel="stylesheet" href="jasmine-1.3.0/jasmine.css"/>
+</head>
+<body>
+    <!-- use Jasmine to run and display test results -->
+    <script type="text/javascript">
+        var jasmineEnv = jasmine.getEnv();
+        jasmineEnv.addReporter(new jasmine.HtmlReporter());
+        jasmineEnv.execute();
+    </script>
+</body>
+</html>

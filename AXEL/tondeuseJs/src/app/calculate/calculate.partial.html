@@ -1,0 +1,22 @@
+<br><br>
+<div ng-controller="CalculateCtrl">
+
+	<form role="form">
+  		<div class="form-group">
+    		<label for="inputFile">Select file</label>
+    		<input type="file" ng-model="entry" accept="text/*" app-filereader/>
+  		</div>
+
+  		 <div class="form-group" ng-class="{'has-error' : !valid}">
+    		<label for="entry">Or enter datas</label>
+   	 		<textarea rows='7' class="form-control" id="entry" ng-model="entry">
+   	 		</textarea>
+  		</div>
+
+  		<input type="button" class="btn btn-success" ng-click="calculate()" value="Compute">
+  		<br>
+	</form>
+
+	<h4>Result</h4>
+	<pre>{{result}}</pre>
+</div>

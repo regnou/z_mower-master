@@ -1,0 +1,20 @@
+<br><br>
+<div ng-controller="TvCtrl">
+
+  <form class="form-inline" role="form" ng-hide="wsConnected">
+
+    	<div class="form-group">
+        	<input type="text" ng-model="tvName" placeholder="Tv name">
+    	</div>
+
+    	<input type="button" class="btn btn-success btn-sm" ng-disabled="wsConnected" ng-click="connect()" value="Connect (start websocket)">
+ 	</form>
+
+ 	<p><strong>{{wsInfos}}<strong></p>
+
+    <div ng-show="wsConnected">
+    	<div class="well">
+    		<canvas id="mowerCanvas"></canvas>
+    	</div>
+    </div>
+</div>
